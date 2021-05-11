@@ -1,0 +1,29 @@
+.sitename{font-size: 50px;
+			font-family: pristina;}
+
+.btn{font-family: poor richard;
+	font-size: 30px;
+	word-spacing: 20px;
+	margin-right:;}
+
+a:hover{color:black;}
+
+#wrapper{margin: 0px auto;}
+
+.footer{background-color: violet;
+		margin-top: 40px;
+		font-family: pristina;}
+
+td{text-align: center;}
+
+icon-bar{color: black;}
+
+.container{
+	background-image:url();
+	background-repeat: no-repeat;
+}
+li{font-size: 19px;
+}
+
+li:hover{color: violet;}
+
