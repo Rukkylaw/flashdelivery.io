@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>www.nwt.finalproject.com</title>
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
@@ -19,7 +19,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-         <div class="sitename"><img src="img/logouse.jpg" width="100px" height="100px">
+         <div class="sitename"><img src="assets/img/logouse.jpg" width="100px" height="100px">
        Flash Delivery Service</div>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar" style="padding-top: 30px">
@@ -49,11 +49,11 @@
 		<div class="row">
 			<div class="col-md-12">
                 <!-- it works the same with all jquery version from 1.x to 2.x -->
-    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-1.9.1.min.js"></script>
     <!-- use jssor.slider.mini.js (40KB) instead for release -->
     <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
-    <script type="text/javascript" src="js/jssor.js"></script>
-    <script type="text/javascript" src="js/jssor.slider.js"></script>
+    <script type="text/javascript" src="assets/js/jssor.js"></script>
+    <script type="text/javascript" src="assets/js/jssor.slider.js"></script>
     <script>
         jQuery(document).ready(function ($) {
             var options = {
@@ -477,7 +477,7 @@
 
 </div>
 </body>
-<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript">
   $('.dropdown').hover(function(){
       $('.dropdown-toggle', this).trigger('click');

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>www.nwt.finalproject.com</title>
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body >
@@ -19,7 +19,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-         <div class="sitename"><img src="img/logouse.jpg" width="100px" height="100px">
+         <div class="sitename"><img src="assets/img/logouse.jpg" width="100px" height="100px">
        Flash Delivery Service</div>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar" style="padding-top: 30px">
