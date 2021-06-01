@@ -87,25 +87,25 @@
      <div class="form-group">
          <label class="control-label col-lg-4">Full Name</label>
            <div class="col-lg-4">
-            <input type="text" name="required2" placeholder="firstname/middlename/surname" class="form-control" />
+            <input type="text" name="fullname" placeholder="firstname/middlename/surname" class="form-control" />
            </div>
       </div>
       <div class="form-group">
          <label class="control-label col-lg-4">E-mail</label>
           <div class="col-lg-4">
-            <input type="email" name="email2" placeholder="something@email.com" class="form-control" />
+            <input type="text" name="email2" placeholder="something@email.com" class="form-control" />
            </div>
       </div>
       <div class="form-group">
       <label class="control-label col-lg-4">Phone number</label>
         <div class="col-lg-4">
-         <input type="number"  name="number2" placeholder="+234......" class="form-control" />
+         <input type="text"  name="number2" placeholder="+234......" class="form-control" />
         </div>
       </div>
       <div class="form-group">
-      <label class="control-label col-lg-4">Messager</label>
+      <label class="control-label col-lg-4">Message</label>
         <div class="col-lg-4">
-         <textarea name="message" rows="10" cols="38" placeholder="message goes here"></textarea>    
+         <textarea name="message" rows="10" cols="38" placeholder="Message....."></textarea>    
         </div>
       </div>
       <div class="form-actions no-margin-bottom" style="text-align:center;">
