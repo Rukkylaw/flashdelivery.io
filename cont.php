@@ -6,7 +6,7 @@
 	echo 'Not connected to server';
 }
 
- if(!mysqli_select_db($con, 'test'))
+ if(!mysqli_select_db($con, 'delivery'))
 {
   echo 'Database not selected';
 }
@@ -16,7 +16,7 @@
  $Phone_number = $_POST['number2'];
  $Message = $_POST['message'];
 
- $sql = "INSERT INTO feedback (fullname,email2,number2,message) VALUES ('$Full_Name', '$E_mail', '$Phone_Number','$Message')";
+ $sql = "INSERT INTO contact (fullname,email2,number2,message) VALUES ('$Full_Name', '$E_mail', '$Phone_number','$Message')";
 
  if (!mysqli_query($con,$sql))
  {

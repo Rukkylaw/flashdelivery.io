@@ -1,8 +1,8 @@
 <?php
 
-require_once("../connect.php");
-  require_once("../session.php");
-  confirm_logged_in();
+require 'connect.php';
+session_start();
+  // confirm_logged_in();
 ?>
 
 <!DOCTYPE html>
@@ -66,9 +66,9 @@ require_once("../connect.php");
   <?php
 extract($_SESSION);
 $sql="SELECT * FROM item WHERE users_id='$id'";
-$query=mysql_query($sql) or die(mysql_error());
+$query=mysqli_query($con, $sql) or die(mysqli_error());
 //$result=mysql_fetch_array($query);
-while ($result=mysql_fetch_array($query)){
+while ($result=mysqli_fetch_array($query)){
   
         echo'<tr>
         <td>'.$result['id'].'</td>

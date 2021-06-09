@@ -78,21 +78,22 @@
 </div>
 <?php 
 
+  require 'connect.php';
+  session_start();
+
 if (isset($_POST['login'])){
 
-  require_once("connect.php");
-  require_once("session.php");
 
   $email = $_POST['email'];
   $password = $_POST['password'];
 
-  $sql = "SELECT * FROM user WHERE email='$email' AND password='$password'";
+  $sql =  "SELECT * FROM user WHERE email='$email' AND password='$password'";
 
-  $query= mysql_query($sql) or die(mysql_error());
+  $result= mysqli_query($con, $sql) or die(mysqli_error($con));
   
 
-    if(mysql_num_rows($query)==1){
-      $user=mysql_fetch_array($query) or die(mysql_error());
+    if(!mysqli_num_rows($result)==0){
+      $user= mysqli_fetch_array($result);
 
       $_SESSION['id'] = $user['id'];
       $_SESSION['email'] = $user['email'];
@@ -100,14 +101,25 @@ if (isset($_POST['login'])){
       $_SESSION['photo'] = $user['image'];
 
       // echo "<script>windows.location.href= 'index1.php'</script>";
-      header('location: user/userspage.php');
+      echo "Success";
+
+        header("Location: http://localhost/Delivery-Website/user/userspage.php");
     }
-    
+    else{
+      echo "Not logged in";
+    }
   }
+      ?>
+        <script>
+            window.alert("Wrong username or password");
+        </script>;
+    
+    
+  
 
 
 
-?>
+
 
 <div class="footer">
     <div class="row" style="font-size: 20px; padding-top: 20px; font-family: ariel">

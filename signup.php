@@ -121,7 +121,7 @@ require_once("connect.php");
 
  $sql = "INSERT INTO user(fullname,email,homeaddress,phonenumber,dob,password,image) VALUES('$fullname','$email','$homeaddress','$phonenumber','$dob','$password','$photo')" or die(mysql_error());
 
- mysql_query($sql) or die(mysql_error());
+ mysqli_query($sql) or die(mysqli_error());
 }}
 ?>
 

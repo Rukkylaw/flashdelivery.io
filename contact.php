@@ -83,7 +83,7 @@
     <div class="col-md-10" style="border: 2px solid violet; font-size: 20px;">
       <center style="text-align: center; font-style: italic; font-family: poor richard; font-size: 30px">Leave a message and we'll get back to you ASAP.</center>
 
-      <form class="form-horizontal" action= "cont.php" style="padding-top: 20px; padding-bottom: 20px; font-size: 18px; font-family: ariel">
+      <form class="form-horizontal" action= "cont.php" style="padding-top: 20px; padding-bottom: 20px; font-size: 18px; font-family: ariel" method="POST">
      <div class="form-group">
          <label class="control-label col-lg-4">Full Name</label>
            <div class="col-lg-4">
